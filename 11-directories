@@ -1,2 +1,0 @@
-#!/bin/bash
-find . typd d -not -name '.' | wc -l
