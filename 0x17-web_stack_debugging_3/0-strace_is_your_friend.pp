@@ -1,6 +1,6 @@
-# Fixes a faulty wordpress site
-exec { 'fix-wordpress':
-  command => 'bash -c "sed -i s/class-wp-locale.phpp/class-wp-locale.php/ \
-/var/www/html/wp-settings.php; service apache2 restart"',
-  path    => '/usr/bin:/usr/sbin:/bin'
+#puppet manifest to rename a file and create a file
+
+file {'/var/www/html/wp-includes/class-wp-locale.phpp':
+  ensure => present,
+  source => '/var/www/html/wp-includes/class-wp-locale.php',
 }

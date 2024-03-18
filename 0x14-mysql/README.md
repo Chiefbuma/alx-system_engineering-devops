@@ -1,38 +1,26 @@
-# Project Name.
-**0x14. MySQL**
+# 0x14. Mysql
 
-## Author's Details.
-Name: *Wendy Munyasi.*
+## Description
+This project sets up a MySQL primary-replica cluster on our own servers.
 
-Email: *wendymunyasi@gmail.com*
+## To Install MySql
+- Get the key from `https://dev.mysql.com/doc/refman/5.7/en/checking-gpg-signature.html`
+- save it in a file and name the file signature.key
+- `sudo apt-key add signature.key`
+- Add the apt repo :- `sudo sh -c 'echo "deb http://repo.mysql.com/apt/ubuntu bionic mysql-5.7" >> /etc/apt/sources.list.d/mysql.list'`
+- Update app :- `sudo apt-get update`
+- Check for the versions available :- `sudo apt-cache policy mysql-server`
+- Install version 5.7 :- `sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*`
 
-Tel:*+254707240068.*
+## To uninstall MySql
+- `sudo systemctl stop mysql`
+- `sudo apt-get purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*`
+- `sudo apt autoremove`
+- `sudo apt autoclean`
 
-##  Requirements
-
-*   Allowed editors: `vi`, `vim`, `emacs`.
-*   All your files will be interpreted/compiled on Ubuntu 20.04 LTS.
-*   All your files should end with a new line.
-*   All your Bash script files must be executable.
-*   Your Bash scripts must pass `Shellcheck` without any error.
-*   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`.
-*   The second line of all your Bash scripts should be a comment explaining what is the script doing.
-
-
-## Project Description.
-
-Learn what is the main role of a database. What is a database replica.
-What is the purpose of a database replica. Why database backups need to be stored in different physical locations. What operation should you regularly perform to make sure that your database backup strategy actually works.
-
-
-* **0. Install MySQL** - Install mySQL on both your `web-01` and `web-02` servers. MySQL distribution must be 5.7.x.
-* **1. Let us in!** - Create a user and password for both MySQL databases which will allow the checker access to them.
-* **2. If only you could see what I've seen with your eyes** - In order for you to set up replication, you’ll need to have a database with at least one table and one row in your primary MySQL server (web-01) to replicate from.
-* **3. Quite an experience to live in fear, isn't it?** - On your primary MySQL server (web-01), create a new user for the replica server.
-* **4. Setup a Primary-Replica infrastructure using MySQL** - Primary must be hosted on `web-01` - do not use the `bind-address`, just comment out this parameter. MySQL replica must be hosted on `web-02`.
-* **5. MySQL backup** - Write a Bash script that generates a MySQL dump and creates a compressed archive out of it. - `5-mysql_backup`.
-
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.
+## Table of contents
+Files | Description
+----- | -----------
+[4-mysql_configuration_primary](./4-mysql_configuration_primary) | MySQL primary configuration
+[4-mysql_configuration_replica](./4-mysql_configuration_replica) | MySQL replica configuration
+[5-mysql_backup](./5-mysql_backup) | Bash script that generates a MySQL dump and creates a compressed archive out of it

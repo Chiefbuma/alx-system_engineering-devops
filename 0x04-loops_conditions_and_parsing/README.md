@@ -1,95 +1,40 @@
-# Project Name.
-**0x04. Loops, conditions and parsing**
+# Loops, conditions and parsing
 
-## Author's Details.
-Name: *Wendy Munyasi.*
+## Description
 
-Email: *wendymunyasi@gmail.com*
+Shellcheck is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. Shellcheck
 
-Tel:*+254707240068.*
+## Table of contents
 
-##  Requirements
-
-### Bash Scripts
-*   Allowed editors: `vi`, `vim`, `emacs`.
-*   All your files will be tested on Ubuntu 20.04 LTS.
-*   All your files should end with a new line.
-*   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`.
-*   All your bash scripts must be executable.
-*   You are not allowed to use `awk`.
-*   Your Bash script must pass `shellcheck` without any error.
-*   The second line of all your Bash scripts should be a comment explaining what is the script doing.
-
-## Project Description.
-Learn how to create SSH keys.
-What is the advantage of using `#!/usr/bin/env bash` over `#!/bin/bash`.
-How to use `while`, `until` and `for` loops.
-How to use `if`, `else`, `elif` and `case` condition statements.
-How to use the `cut` command.
-What are files and other comparison operators, and how to use them.
+Files | Description
+----------- | -----------
+[0-RSA_public_key.pub](./0-RSA_public_key.pub) | RSA public key
+[1-for_best_school](./1-for_best_school) | Bash script that displays ```Best School``` 10 times. Req: Using ```for``` loop (```while``` and ```until``` are forbidden)
+[2-while_best_school](./2-while_best_school) | Bash script that displays ```Best School``` 10 times. Req: Using the ```while``` loop (```for``` and ```until``` are forbidden)
+[3-until_best_school](./3-until_best_school) | Bash script that displays ```Best School``` 10 times. Req: Using the ```until``` loop (```for``` and ```while``` are forbidden)
+[4-if_9_say_hi](./4-if_9_say_hi) | Bash script that displays ```Best School``` 10 times, but for the 9th iteration, displays ```Best School``` and then ```Hi``` on a new line. Req: Using the ```while``` loop (```for``` and ```until``` are forbidden) and Using the ```if``` statement
+[5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance) | Bash script that loops from 1 to 10 and: displays ```bad luck``` for the 4th loop iteration, displays ```good luck``` for the 8th loop iteration, displays ```Best School``` for the other iterations. Req: Using the ```while``` loop (```for``` and ```until``` are forbidden) and Using the ```if```, ```elif``` and ```else``` statements
+[6-superstitious_numbers](./6-superstitious_numbers) | Bash script that displays numbers from 1 to 20 and: displays ```4``` and then ```bad luck from China``` for the 4th loop iteration, displays ```9``` and then ```bad luck from Japan``` for the 9th loop iteration, displays ```17``` and then ```bad luck from Italy``` for the 17th loop iteration.
+[7-clock](./7-clock) | Bash script that displays the time for 12 hours and 59 minutes: display hours from 0 to 12, display minutes from 1 to 59.
+[8-for_ls](./8-for_ls) | Bash script that displays: The content of the current directory, In a list format, Where only the part of the name after the first dash is displayed (refer to the example)
+[9-to_file_or_not_to_file](./9-to_file_or_not_to_file) | Bash script that gives you information about the ```school``` file.
+[10-fizzbuzz](./10-fizzbuzz) | Bash script that displays numbers from 1 to 100. Re: Displays ```FizzBuzz``` when the number is a multiple of 3 and 5, Displays ```Fizz``` when the number is multiple of 3, Displays ```Buzz``` when the number is a multiple of 5, Otherwise, displays the number, In a list format.
+[100-read_and_cut](./100-read_and_cut) | Bash script that displays the content of the ```file /etc/passwd```. Script should only display: username, user id, Home directory path for the user.
+[101-tell_the_story_of_passwd](./101-tell_the_story_of_passwd) | Bash script that displays the content of the file ```/etc/passwd```, using the ```while``` loop + IFS. Format: ```The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO```
+[102-lets_parse_apache_logs](./102-lets_parse_apache_logs) | Bash script that displays the visitor IP along with the ```HTTP status code``` from the Apache log file. Format: IP HTTP_CODE
+[103-dig_the-data](./103-dig_the-data) | Bash script that groups visitors by IP and HTTP status code, and displays this data. The exact format must be: OCCURENCE_NUMBER IP HTTP_CODE, In list format.
 
 
-* **0. Create a SSH RSA key pair** - Create a RSA key pair. - `0-RSA_public_key.pub`.
-* **1. For Best School loops** - Write a Bash script that displays `Best School` 10 times. - `1-for_best_school`.
-* **2. While Best School loop** - Write a Bash script that displays `Best School` 10 times. - `2-while_best_school`.
-* **3. Until Best School loop** - Write a Bash script that displays `Best School` 10 times. - `3-until_best_school`.
-* **4. If 9, say Hi!** - Write a Bash script that displays `Best School` 10 times, but for the 9th iteration, displays `Best School` and then `Hi` on a new line. - `4-if_9_say_hi`.
-* **5. 4 bad luck, 8 is your chance** - Write a Bash script that loops from 1 to 10 with the given requirements. - `5-4_bad_luck_8_is_your_chance`.
-* **6. Superstitious numbers** - Write a Bash script that loops from 1 to 20 with the given requirements. - `6-superstitious_numbers`.
-* **7. Clock** - Write a Bash script that displays the time for 12 hours and 59 minutes with the given requirements. - `7-clock`.
-* **8. For ls** - Write a Bash script that displays The content of the current directory in a list format where only the part of the name after the first dash is displayed with the given requirements. - `8-for_ls`.
-* **9. To file, or not to file** - Write a Bash script that gives you information about the `school` file with the given requirements. - `9-to_file_or_not_to_file`.
-* **10. FizzBuzz** - Write a Bash script that displays numbers from 1 to 100 with the given requirements. - `10-fizzbuzz`.
----
-* **11. Read and cut** - Write a Bash script that displays the content of the file `/etc/passwd`: username, id and home directory path for the user. - `100-read_and_cut`.
-    ```
-    sylvain@ubuntu$ cat /etc/passwd
-    root:x:0:0:root:/root:/bin/bash
-    daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
-    bin:x:2:2:bin:/bin:/usr/sbin/nologin
-    sys:x:3:3:sys:/dev:/usr/sbin/nologin
-    sync:x:4:65534:sync:/bin:/bin/sync
-    games:x:5:60:games:/usr/games:/usr/sbin/nologin
-    man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
-    lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
-    mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
-    news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
-    ylvain@ubuntu$ ./100-read_and_cut
-    root:0:/root
-    daemon:1:/usr/sbin
-    bin:2:/bin
-    sys:3:/dev
-    sync:4:/bin
-    games:5:/usr/games
-    man:6:/var/cache/man
-    lp:7:/var/spool/lpd
-    mail:8:/var/mail
-    news:9:/var/spool/news
-    ```
----
+## Resources
+- [Loops sample](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_01.html)
+- [Variable assignment and arithmetic](https://tldp.org/LDP/abs/html/ops.html)
+- [Comparison operators](https://tldp.org/LDP/abs/html/comparison-ops.html)
+- [File test operators](https://tldp.org/LDP/abs/html/fto.html)
+- [Make your scripts portable](https://www.cyberciti.biz/tips/finding-bash-perl-python-portably-using-env.html)
 
-* **12. Tell the story of passwd** - Write a Bash script that displays the content of the file `/etc/passwd`, using the `while` loop + IFS. - `101-tell_the_story_of_passwd`.
+## Author
 
-    Format: `The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO`
----
-
-* **13. Let's parse Apache logs** - Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file. - `102-lets_parse_apache_logs`.
-    ```
-    sylvain@ubuntu$ ./102-lets_parse_apache_logs | tail -n 10
-    185.130.5.207 301
-    185.130.5.207 301
-    91.224.140.223 200
-    62.210.142.23 304
-    92.222.20.166 304
-    180.76.15.19 200
-    2.1.201.36 304
-    198.58.99.82 304
-    50.116.30.23 304
-    209.133.111.211 200
-    sylvain@ubuntu$
-    ```
----
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<!-- <img src="https://avatars.githubusercontent.com/u/99494922?v=4" width="75px;"/><br /><sub><b>Ayomide Johnaon Salami</b></sub>[💻](https://github.com/Royalboe/alx-system_engineering-devops/commits?author=Royalboe "Code") [📖](https://github.com/Royalboe/alx-system_engineering-devops/commits?author=Royalboe "Documentation") [🤔] -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
