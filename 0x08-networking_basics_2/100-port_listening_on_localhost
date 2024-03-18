@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 #!/usr/bin/env bash
 # Script that listens on port 98 on localhost.
 
 nc -l 98
+=======
+#!/usr/bin/env bash
+# Script that listens on port 98 on localhost.
+
+nc -l 98
+>>>>>>> 1b16576f62054a49af68be94fe53bc7eb6ad98bf

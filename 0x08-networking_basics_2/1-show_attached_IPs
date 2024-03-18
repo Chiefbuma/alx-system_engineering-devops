@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 #!/usr/bin/env bash
 # Script that displays all active IPv4 IPs on the machine it’s executed on.
 
 hostname -I | cut -d' ' -f1 ; hostname -i
+=======
+#!/usr/bin/env bash
+# Script that displays all active IPv4 IPs on the machine it’s executed on.
+
+hostname -I | cut -d' ' -f1 ; hostname -i
+>>>>>>> 1b16576f62054a49af68be94fe53bc7eb6ad98bf
