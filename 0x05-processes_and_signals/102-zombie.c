@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * infinite_while - creating the parent process and the,
+ * infinite_while - used when done creating the parent process and the,
  * zombies.
  *
  * Return: always 0
