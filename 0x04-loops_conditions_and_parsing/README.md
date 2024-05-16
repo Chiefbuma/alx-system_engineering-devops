@@ -1,40 +1,67 @@
 # Loops, conditions and parsing
 
-## Description
+> This project was on shell loops, conditions and parsing.
 
-Shellcheck is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. Shellcheck
+## Summary
 
-## Table of contents
+I learnt about how to create SSH keys, the advantage of using `#!/usr/bin/env bash` over `#!/bin/bash`, how to use `while`, `until` and `for loops`, how to use `if`, `else`, `elif` and `case` condition statements, how to use the `cut` command and what are files and other comparison operators, and how to use them.
 
-Files | Description
------------ | -----------
-[0-RSA_public_key.pub](./0-RSA_public_key.pub) | RSA public key
-[1-for_best_school](./1-for_best_school) | Bash script that displays ```Best School``` 10 times. Req: Using ```for``` loop (```while``` and ```until``` are forbidden)
-[2-while_best_school](./2-while_best_school) | Bash script that displays ```Best School``` 10 times. Req: Using the ```while``` loop (```for``` and ```until``` are forbidden)
-[3-until_best_school](./3-until_best_school) | Bash script that displays ```Best School``` 10 times. Req: Using the ```until``` loop (```for``` and ```while``` are forbidden)
-[4-if_9_say_hi](./4-if_9_say_hi) | Bash script that displays ```Best School``` 10 times, but for the 9th iteration, displays ```Best School``` and then ```Hi``` on a new line. Req: Using the ```while``` loop (```for``` and ```until``` are forbidden) and Using the ```if``` statement
-[5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance) | Bash script that loops from 1 to 10 and: displays ```bad luck``` for the 4th loop iteration, displays ```good luck``` for the 8th loop iteration, displays ```Best School``` for the other iterations. Req: Using the ```while``` loop (```for``` and ```until``` are forbidden) and Using the ```if```, ```elif``` and ```else``` statements
-[6-superstitious_numbers](./6-superstitious_numbers) | Bash script that displays numbers from 1 to 20 and: displays ```4``` and then ```bad luck from China``` for the 4th loop iteration, displays ```9``` and then ```bad luck from Japan``` for the 9th loop iteration, displays ```17``` and then ```bad luck from Italy``` for the 17th loop iteration.
-[7-clock](./7-clock) | Bash script that displays the time for 12 hours and 59 minutes: display hours from 0 to 12, display minutes from 1 to 59.
-[8-for_ls](./8-for_ls) | Bash script that displays: The content of the current directory, In a list format, Where only the part of the name after the first dash is displayed (refer to the example)
-[9-to_file_or_not_to_file](./9-to_file_or_not_to_file) | Bash script that gives you information about the ```school``` file.
-[10-fizzbuzz](./10-fizzbuzz) | Bash script that displays numbers from 1 to 100. Re: Displays ```FizzBuzz``` when the number is a multiple of 3 and 5, Displays ```Fizz``` when the number is multiple of 3, Displays ```Buzz``` when the number is a multiple of 5, Otherwise, displays the number, In a list format.
-[100-read_and_cut](./100-read_and_cut) | Bash script that displays the content of the ```file /etc/passwd```. Script should only display: username, user id, Home directory path for the user.
-[101-tell_the_story_of_passwd](./101-tell_the_story_of_passwd) | Bash script that displays the content of the file ```/etc/passwd```, using the ```while``` loop + IFS. Format: ```The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO```
-[102-lets_parse_apache_logs](./102-lets_parse_apache_logs) | Bash script that displays the visitor IP along with the ```HTTP status code``` from the Apache log file. Format: IP HTTP_CODE
-[103-dig_the-data](./103-dig_the-data) | Bash script that groups visitors by IP and HTTP status code, and displays this data. The exact format must be: OCCURENCE_NUMBER IP HTTP_CODE, In list format.
+## Files
 
+> Each file contains the solution to a task in the project.
 
-## Resources
-- [Loops sample](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_01.html)
-- [Variable assignment and arithmetic](https://tldp.org/LDP/abs/html/ops.html)
-- [Comparison operators](https://tldp.org/LDP/abs/html/comparison-ops.html)
-- [File test operators](https://tldp.org/LDP/abs/html/fto.html)
-- [Make your scripts portable](https://www.cyberciti.biz/tips/finding-bash-perl-python-portably-using-env.html)
-
-## Author
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-<!-- <img src="https://avatars.githubusercontent.com/u/99494922?v=4" width="75px;"/><br /><sub><b>Ayomide Johnaon Salami</b></sub>[💻](https://github.com/Royalboe/alx-system_engineering-devops/commits?author=Royalboe "Code") [📖](https://github.com/Royalboe/alx-system_engineering-devops/commits?author=Royalboe "Documentation") [🤔] -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+- [x] [0-RSA_public_key.pub](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/0-RSA_public_key.pub): Create a RSA key pair.
+- [x] [1-for_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/1-for_best_school): A Bash script that displays `Best School` 10 times.
+> (`for` loop)
+- [x] [2-while_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/2-while_best_school): A Bash script that displays `Best School` 10 times.
+> (`while` loop)
+- [x] [3-until_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/3-until_best_school): A Bash script that displays `Best School` 10 times.
+> (`until` loop)
+- [x] [4-if_9_say_hi](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/4-if_9_say_hi): A Bash script that displays `Best School` 10 times, ut for the 9th iteration, displays `Best School` and then `Hi` on a new line.
+> (`while` loop and `if` statement)
+- [x] [5-4_bad_luck_8_is_your_chance](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/5-4_bad_luck_8_is_your_chance): A Bash script that loops from 1 to 10 and: 
+	- displays `bad luck` for the 4th loop iteration
+	- displays `good luck` for the 8th loop iteration
+	- displays `Best School` for the other iterations
+> (`while` loop and `if`, `elif` and `else` statements)
+- [x] [6-superstitious_numbers](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/6-superstitious_numbers): A Bash script that displays numbers from 1 to 20 and:
+	- displays `4` and then `bad luck from China` for the 4th loop iteration
+	- displays `9` and then `bad luck from Japan` for the 9th loop iteration
+	- displays `17` and then `bad luck from Italy` for the 17th loop iteration
+> (`while` loop and `case` statement)
+- [x] [7-clock](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/7-clock): A Bash script that displays the time for 12 hours and 59 minutes:
+	- display hours from 0 to 12
+	- display minutes from 1 to 59
+> (`while` loop)
+- [x] [8-for_ls](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/8-for_ls): A Bash script that displays:
+	- The content of the current directory
+	- In a list format
+	- Where only the part of the name after the first dash is displayed
+> (`for` loop)
+- [x] [9-to_file_or_not_to_file](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/9-to_file_or_not_to_file): A Bash script that gives you information about the school file.
+> (`if` and `else` statements)
+- [x] [10-fizzbuzz](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/10-fizzbuzz): A Bash script that displays numbers from 1 to 100.
+	- Displays `FizzBuzz` when the number is a multiple of 3 and 5
+	- Displays `Fizz` when the number is multiple of 3
+	- Displays `Buzz` when the number is a multiple of 5
+	- Otherwise, displays the number
+	- In a list format
+- [x] [100-read_and_cut](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/100-read_and_cut): A Bash script that displays the content of the file `/etc/passwd`. It will only display:
+	- username
+	- user id
+	- Home directory path for the user
+> (`while` loop)
+- [x] [101-tell_the_story_of_passwd](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/101-tell_the_story_of_passwd): A Bash script that displays the content of the file `/etc/passwd`, using the `while` loop + IFS.
+- [x] [102-lets_parse_apache_logs](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/102-lets_parse_apache_logs): A Bash script that displays the visitor IP along with the HTTP status code from the [Apache log file](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/apache-access.log).
+	- Format: IP HTTP_CODE
+		- in a list format
+		- See example
+	- You must use `awk`
+	- You are not allowed to use `while`, `for`, `until` and `cut`
+- [x] [103-dig_the-data](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/103-dig_the-data): A Bash script that groups visitors by IP and HTTP status code, and displays this data. (from previous task)
+	- The exact format must be:
+		- OCCURENCE_NUMBER IP HTTP_CODE
+		- In list format
+	- Ordered from the greatest to the lowest number of occurrences
+	- You must use `awk`
+	- You are not allowed to use `while`, `for`, `until` and `cut`

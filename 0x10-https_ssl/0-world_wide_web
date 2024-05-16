@@ -1,17 +1,22 @@
 #!/usr/bin/env bash
-# displays information about subdomains
+# A Bash script that prints information about a domain and it's subdomain(s).
+# This setup ensures the "printf" call is always made with the necessary arguments.
 
-sub_info () {
-    
-    if [ "$#" -eq 2 ]; then
-        dig $2.$1 | grep -A1 'ANSWER SECTION:' | tr '\n' ' ' | awk '{split($0,a," "); split(a[4],b,"."); printf "The subdomain %s is a %s record and points to %s\n",b[1], a[7], a[8]}'
-    elif [ "$#" -eq 1 ]; then
-        dig www.$1 | grep -A1 'ANSWER SECTION:' | tr '\n' ' ' | awk '{split($0,a," "); printf "The subdomain www is a %s record and points to %s\n", a[7], a[8]}'
-        dig lb-01.$1 | grep -A1 'ANSWER SECTION:' | tr '\n' ' ' | awk '{split($0,a," "); printf "The subdomain lb-01 is a %s record and points to %s\n", a[7], a[8]}'
-        dig web-01.$1 | grep -A1 'ANSWER SECTION:' | tr '\n' ' ' | awk '{split($0,a," "); printf "The subdomain web-01 is a %s record and points to %s\n", a[7], a[8]}'
-        dig web-02.$1 | grep -A1 'ANSWER SECTION:' | tr '\n' ' ' | awk '{split($0,a," "); printf "The subdomain web-02 is a %s record and points to %s\n", a[7], a[8]}'
-    fi
+display_info ()
+{
+    domain="$1"
+    subdomain="$2"
 
+	# Use 'dig' to perform a DNS lookup and 'awk' to format the output
+	dig "$subdomain.$domain" | awk '/ANSWER SECTION:/{getline; printf "The subdomain %s is a %s record and points to %s\n", var, $4, $5}' var="$subdomain"
 }
 
-sub_info $1 $2
+for sbd in "www" "lb-01" "web-01" "web-02"
+do
+	 # If $2 is not provided or matches current subdomain...
+	if [ -z "$2" ] || [ "$2" == "$sbd" ];
+    then
+		# ...call 'display_info' with domain & current sbd.
+		display_info "$1" "$sbd"
+    fi
+done

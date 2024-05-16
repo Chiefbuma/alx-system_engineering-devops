@@ -1,7 +1,14 @@
-# 0x0E. Web stack debugging #1
+# Web stack debugging #1
 
-## Table of contents
-Files | Description
------ | -----------
-[0-nginx_likes_port_80](./0-nginx_likes_port_80) | Bash script that configures a server so that Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs
-[1-debugging_made_short](./1-debugging_made_short) | Bash script that replicates task 0, with fewer lines
+> This project was about more Web stack debugging cases.
+
+## Summary
+
+I learnt about...
+
+## Files
+
+> Each file contains the solution to a task in the project.
+
+- [ ] [0-nginx_likes_port_80](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0E-web_stack_debugging_1/0-nginx_likes_port_80):
+- [ ] [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0E-web_stack_debugging_1/):

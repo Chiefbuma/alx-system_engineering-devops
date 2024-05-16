@@ -1,12 +1,18 @@
-# 0x0B. SSH
+# SSH
 
-## Description
-This project is about learning how to connect on a server using ssh.
+> This project was on SSH
 
-## Table of contents
-Files | Description
------ | -----------
-[0-use_a_private_key](./0-use_a_private_key) | Bash script that uses ssh to connect to your server using the private key ~/.ssh/school with the user ubuntu
-[1-create_ssh_key_pair](./1-create_ssh_key_pair) | Bash script that creates an RSA key pair
-[2-ssh_config](./2-ssh_config) | SSH client configuration
-[4-puppet_ssh_config.pp](./4-puppet_ssh_config.pp) | sets up a client SSH configuration file so that we can connect to a server without using a password
+## Summary
+
+I learnt about servers and where they usually live, SSH and how to create an SSH RSA key pair, how to connect to a remote host using an SSH RSA key pair and the advantage of using `#!/usr/bin/env bash` instead of `/bin/bash`.
+
+## Files
+
+> Each file contains the solution to a task in the project.
+
+- [x] [0-use_a_private_key](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0B-ssh/0-use_a_private_key): A Bash script that uses `ssh` to connect to your server using the private key `~/.ssh/school` with the user `ubuntu`.
+- [x] [1-create_ssh_key_pair](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0B-ssh/1-create_ssh_key_pair): A Bash script that creates an RSA key pair.
+- [x] [2-ssh_config](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0B-ssh/2-ssh_config): SSH client configuration to:
+	- Use the private key `~/.ssh/holberton`
+	- Refuse to authenticate using a password
+- [x] [100-puppet_ssh_config.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0B-ssh/100-puppet_ssh_config.pp): A Puppet manifest that makes changes to my servers configuration file.

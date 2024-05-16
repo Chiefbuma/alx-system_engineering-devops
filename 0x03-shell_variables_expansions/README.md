@@ -1,71 +1,39 @@
-# Shell Variables Expansions
+# Shell, init files, variables and expansions
 
-## Description
+> This project was an introduction to init files, variables and expansions.
 
-Shell commands for variables expansions
+## Summary
 
-## Learning Objectives
-
-### General
-* What happens when you type $ ls -l *.txt
-* Shell Initialization Files
-* What are the /etc/profile file and the /etc/profile.d directory
-* What is the ~/.bashrc file
-### Variables
-* What is the difference between a local and a global variable
-* What is a reserved variable
-* How to create, update and delete shell variables
-* What are the roles of the following reserved variables: HOME, PATH, PS1
-* What are special parameters
-* What is the special parameter $??
-### Expansions
-* What is expansion and how to use them
-* What is the difference between single and double quotes and how to use them properly
-* How to do command substitution with $() and backticks
-### Shell Arithmetic
-* How to perform arithmetic operations with the shell
-* The alias Command
-* How to create an alias
-* How to list aliases
-* How to temporarily disable an alias
-### Other help pages
-* How to execute commands from a file in the current shell
-
+I learnt about initialization files, local, global, and reserved variables, and special parameters in the Shell.
+	- How to create, update and delete shell variables.
+	- The roles of the some reserved variables.
+I practiced using expansions, performing arithmetic operations, and utilizing aliases.
 
 ## Files
 
-- [File 0-alias](./0-alias) is a script that creates an alias.
+> Each file contains the solution to a task in the project.
 
-- [File 1-hello_you](./1-hello_you) is a script that prints hello user, where user is the current Linux user.
+- [x] [0-alias](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/0-alias): Bash script that creates an alias named `ls` with value `rm *`.
+- [x] [1-hello_you](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/1-hello_you): Bash script that prints `hello user`, where user is the current Linux user.
+- [x] [2-path](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/2-path): Bash script that adds `/action` to the `PATH`.
+- [x] [3-paths](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/3-paths): Bash script that counts the number of directories in the `PATH`.
+- [x] [4-global_variables](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/4-global_variables): Bash script that lists environment variables.
+- [x] [5-local_variables](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/5-local_variables): Bash script that lists all local variables, environment variables and functions.
+- [x] [6-create_local_variable](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/6-create_local_variable): Bash script that creates a new local variable named `BEST` with value `School`.
+- [x] [7-create_global_variable](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/7-create_global_variable): Bash script that creates a new global variable named `BEST` with value `School`.
+- [x] [8-true_knowledge](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/8-true_knowledge): Bash script that prints the result of the addition of 128 with the value stored in the environment variable `TRUEKNOWLEDGE`, followed by a new line.
+- [x] [9-divide_and_rule](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/9-divide_and_rule): Bash script that prints the result of `POWER` divided by `DIVIDE`. `POWER` and `DIVIDE` are environment variables.
+- [x] [10-love_exponent_breath](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/10-love_exponent_breath): Bash script that displays the result of `BREATH` to the power of `LOVE`. `BREATH` and `LOVE` are environment variables.
+- [x] [11-binary_to_decimal](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/11-binary_to_decimal): Bash script that converts a number in base 2 stored in the environment variable `BINARY` to base 10.
+- [x] [12-combinations](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/12-combinations): Bash script that prints all possible combinations of two letters, except `oo`, as follows:
+	- Letters are lower cases, from `a` to `z`.
+	- One combination per line.
+	- The output should be alpha ordered, starting with `aa`.
+	- Does not print `oo`.
+- [x] [13-print_float](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/13-print_float): Bash script that prints a number stored in the environment variable `NUM` with two decimal places.
+- [x] [100-decimal_to_hexadecimal](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/100-decimal_to_hexadecimal): Bash script that converts a number in base 10 stored in the environment variable `DECIMAL` to base 16.
+- [x] [101-rot13](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/101-rot13): Bash script that encodes and decodes text using the rot13 encryption.
+- [x] [102-odd](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/102-odd): Bash script that prints every other line from the input, starting with the first line.
 
-- [File 2-path](./2-path) is a script that adds /action to the PATH.
-
-- [File 3-paths](./3-paths) is a script that counts the number of directories in the PATH.
-
-- [File 4-global_variables](./4-global_variables) is a script that lists environment variables.
-
-- [File 5-local_variables](./5-local_variables) is a script that lists all local variables and environment variables, and functions.
-
-- [File 6-create_local_variable](./6-create_local_variable) is a script that creates a new local variable.
-
-- [File 7-create_global_variable](./7-create_global_variable) is a script that creates a new global variable.
-
-- [File 8-true_knowledge](./8-true_knowledge) is a script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
-
-- [File 9-divide_and_rule](./9-divide_and_rule) is a script that prints the result of POWER divided by DIVIDE, followed by a new line.
-
-- [File 10-love_exponent_breath](./10-love_exponent_breath) is a script that displays the result of BREATH to the power LOVE.
-
-- [File 11-binary_to_decimal](/.11-binary_to_decimal) is a script that converts a number from base 2 to base 10.
-
-- [File 12-combinations](./12-combinations) is a script that prints all possible combinations of two letters, except oo.
-
-- [File 13-print_float](./13-print_float) is a script that prints a number with two decimal places.
-
-- [File 14-decimal_to_hexadecimal](./14-decimal_to_hexadecimal) is a script that converts a number from base 10 to base 16.
-
-- [File 100-rot13](./100-rot13) is a script that encodes and decodes text using the rot13 encryption.
-
-- [File 101-odd](./101-odd) is a script that prints every other line from the input, starting with the first line.
-
-- [File 102-water_and_stir](./102-water_and_stir) is a shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result..
+- [x] [103-water_and_stir](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/103-water_and_stir): Bash script that adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result.
+	- `WATER` is in base `water`, `STIR` is in base `stir`, and the result is in base `bestchol`.

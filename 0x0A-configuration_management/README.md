@@ -1,13 +1,15 @@
-# 0x0A Configuration management
+# Configuration management
 
-## Description
-This project is an introduction to Configuration Management, as part of the first year curriculum of Holberton School.
-This project contains very basic Puppet manifests.
+> This project was on configuration management.
 
-## Table of contents
-Files | Description
------ | -----------
-[0-create_a_file.pp](./0-create_a_file.pp) | Puppet manifest that creates a file in the /tmp directory
-[1-install_a_package.pp](./1-install_a_package.pp) | Puppet manifest that installs puppet-lint
-[2-execute_a_command.pp](./2-execute_a_command.pp) | Puppet manifest that kills a process named killmenow
-[killmenow](./killmenow) | Test bash script to kill with manifest 2-execute_a_command.pp
+## Summary
+
+I learnt about general practices of configuration management, Puppet and how to write Puppet manifests, Puppet-lint etc.
+
+## Files
+
+> Each file contains the solution to a task in the project.
+
+- [x] [0-create_a_file.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0A-configuration_management/0-create_a_file.pp): A manifest that creates a file in `/tmp`.
+- [x] [1-install_a_package.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0A-configuration_management/1-install_a_package.pp): A manifest that install `flask` from `pip3`.
+- [x] [2-execute_a_command.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0A-configuration_management/2-execute_a_command.pp): A manifest that kills a process named `killmenow`.

@@ -1,28 +1,24 @@
+# Regular expression
 
-# 0x06. Regular expression
+> This project was an introduction to Regular expression (RegExp).
 
-## Description
-This project is about how to build a regular expression using Oniguruma, a regular expression library that which is used by Ruby by default. Note that other regular expression libraries sometimes have different properties.
+## Summary
 
+I learnt about regular expressions by building them using the Oniguruma library, which is used by Ruby by default. 
 
-## Table of contents
+## Files
 
-Files | Description
------ | -----------
-[0-simply_match_school.rb](./0-simply_match_school.rb) |  Ruby script that accepts one argument and pass it to a regular expression matching method that has to match 'School'
-[1-repetition_token_0.rb](./1-repetition_token_0.rb) | Ruby script that accepts one argument and pass it to a regular expression matching method that has to match a repetition token
-[2-repetition_token_1.rb](./2-repetition_token_1.rb) | Ruby script that accepts one argument and pass it to a regular expression matching method that has to match a repetition token
-[3-repetition_token_2.rb](./3-repetition_token_2.rb) | Ruby script that accepts one argument and pass it to a regular expression matching method that has to match a repetition token
-[4-repetition_token_3.rb](./4-repetition_token_3.rb) | Ruby script that accepts one argument and pass it to a regular expression matching method that has to match a repetition token
-[5-beginning_and_end.rb](./5-beginning_and_end.rb) | Ruby script that accepts one argument and pass it to a regular expression matching method that has to match a string that starts with h ends with n and can have any single character in between
-[6-phone_number.rb](./6-phone_number.rb) | Ruby script that accepts one argument and pass it to a regular expression matching method that has to match a 10 digit phone number
-[7-OMG_WHY_ARE_YOU_SHOUTING.rb](./7-OMG_WHY_ARE_YOU_SHOUTING.rb) | Ruby script that accepts one argument and pass it to a regular expression matching method that has to only match capital letters
-[100-textme.rb](./100-textme.rb) | Ruby script that accepts one argument and pass it to a regular expression matching method that parses a logfile with this format: "[SENDER],[RECEIVER],[FLAGS]"
+> Each file contains the solution to a task in the project.
 
-
-## Resources
-- [Regular expressions - basics](https://www.slideshare.net/neha_jain/introducing-regular-expressions)
-- [Regular expressions - advanced](https://www.slideshare.net/neha_jain/advanced-regular-expressions-80296518)
-- [Rubular is your best friend](https://rubular.com/)
-- [Use a regular expression against a problem: now you have 2 problems](https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/)
-- [Learn Regular Expressions with simple, interactive exercises](https://regexone.com/)
+- [x] [0-simply_match_school.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/0-simply_match_school.rb): A Ruby script that accepts one argument and pass it to a regular expression matching method, to match the given case.
+- [x] [1-repetition_token_0.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/1-repetition_token_0.rb): A Ruby script that accepts one argument and pass it to a regular expression matching method, to match the given case.
+- [x] [2-repetition_token_1.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/2-repetition_token_1.rb): A Ruby script that accepts one argument and pass it to a regular expression matching method, to match the given case.
+- [x] [3-repetition_token_2.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/3-repetition_token_2.rb): A Ruby script that accepts one argument and pass it to a regular expression matching method, to match the given case.
+- [x] [4-repetition_token_3.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/4-repetition_token_3.rb): A Ruby script that accepts one argument and pass it to a regular expression matching method, to match the given case.
+- [x] [5-beginning_and_end.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/5-beginning_and_end.rb): A Ruby script that accepts one argument and pass it to a regular expression matching method, to match the given case.
+- [x] [6-phone_number.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/6-phone_number.rb): A Ruby script that accepts one argument and pass it to a regular expression matching method, to match the given case.
+- [x] [7-OMG_WHY_ARE_YOU_SHOUTING.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/7-OMG_WHY_ARE_YOU_SHOUTING.rb): A Ruby script that accepts one argument and pass it to a regular expression matching method, to match the given case.
+- [x] [100-textme.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/100-textme.rb): A Ruby script outputs: `[SENDER],[RECEIVER],[FLAGS]` from a [logfile](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/text_messages.log).
+	- The sender phone number or name (including country code if present)
+	- The receiver phone number or name (including country code if present)
+	- The flags that were used

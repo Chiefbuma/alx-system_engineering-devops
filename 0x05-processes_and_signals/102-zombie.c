@@ -1,10 +1,39 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <stdio.h> /* printf() */
+#include <unistd.h> /* fork() */
+#include <stdlib.h> /* exit() */
+#include <sys/types.h> /* pid_t */
+
+int infinite_while(void);
 
 /**
- * infinite_while - creates an infinite loop to make the program hang
- * Return: always 0
+ * main - Creates 5 zombie processes.
+ * Return: 0 (Success)
+ */
+int main(void)
+{
+	pid_t pid;
+	int idx;
+
+	for (idx = 0; idx < 5; idx++)
+	{
+		pid = fork();
+		if (pid == 0) /* child process */
+		{
+			exit(0);
+		}
+		else if (pid > 0) /* parent process */
+		{
+			printf("Zombie process created, PID: %d\n", pid);
+		}
+	}
+	infinite_while();
+	return (0);
+}
+
+/**
+ * infinite_while - infinite loop
+ *
+ * Return: nothing
  */
 int infinite_while(void)
 {
@@ -12,26 +41,5 @@ int infinite_while(void)
 	{
 		sleep(1);
 	}
-	return (0);
-}
-
-/**
- * main - creates 5 zombie processes
- * Return: always 0
- */
-int main(void)
-{
-	int i;
-	pid_t zombie;
-
-	for (i = 0; i < 5; i++)
-	{
-		zombie = fork();
-		if (!zombie)
-			return (0);
-		printf("Zombie process created, PID: %d\n", zombie);
-	}
-
-	infinite_while();
 	return (0);
 }

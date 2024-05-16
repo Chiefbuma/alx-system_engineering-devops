@@ -1,90 +1,40 @@
-# Basic Shell Commands
+# Shell, Basics
 
-The folder contains commands for navigating and for manipulating files.
+> This project was an introduction to the Shell.
 
-## Description
+## Summary
 
-This projection serves as an intoduction to shell
+I learnt about built-in commands like `cd`, `pwd`, `ls`... I learnt about the filesystem and how to navigate it.
+I also learnt how to 'look around' using commands like `ls`, `less`, `file`... also, the `ln` command and its usage.
+I also learnt about commands like `type`, `which`, `help`, `man`... implementing wildcards, reading man pages, creating links, setting file permissions and using keyboard shortcuts in Bash.
 
-A shell is a user interface for access to an operating system's services. Most often the user interacts with the shell using a command-line interface (CLI). The terminal is a program that opens a graphical window and lets you interact with the shell.
+## Files
 
-### Objectives
+> Each file contains the solution to a task in the project.
 
-At the end of the project I was able to explain the following
-
-* What does RTFM mean?
-* What is a Shebang
-* What is the Shell
-* What is the difference between a terminal and a shell
-* What is the shell prompt
-* How to use the history (the basics)
-* What do the commands or built-ins cd, pwd, ls do
-* How to navigate the filesystem
-* What are the . and .. directories
-* What is the working directory, how to print it and how to change it
-* What is the root directory
-* What is the home directory, and how to go there
-* What is the difference between the root directory and the home directory of the user root
-* What are the characteristics of hidden files and how to list them
-* What does the command cd - do
-* What do the commands ls, less, file do
-* How do you use options and arguments with commands
-* Understand the ls long format and how to display it
-* What does the ln command do
-* What do you find in the most common/important directories
-* What is a symbolic link
-* What is a hard link
-* What is the difference between a hard link and a symbolic link
-* What do the commands cp, mv, rm, mkdir do
-* What are wildcards and how do they work
-* How to use wildcards
-* What do type, which, help, man commands do
-* What are the different kinds of commands
-* What is an alias
-* When do you use the command help instead of man
-* How to read a man page
-* What are man page sections
-* What are the section numbers for User commands, System calls and Library functions
-* Keyboard Shortcuts for Bash
-* Common shortcuts for Bash
-* LTS
-
-### Files
-
-- [File 0-current_working_directory](./0-current_working_directory) prints the current working directory.
-
-- [File 1-listit](./1-listit) displays the contents list of the current directory.
-
-- [File 2-bring_me_home](./2-bring_me_home) changes the working directory to the user’s home directory.
-
-- [File 3-listfiles](./3-listfiles) displays current directory contents in a long format.
-
-- [File 4-listmorefiles](./4-listmorefiles) displays current directory contents, including hidden files (starting with .).
-
-- [File 5-listfilesdigitonly](./5-listfilesdigitonly) displays current directory contents in long format, with user and group IDs displayed numerically and hidden files.
-
-- [File 6-firstdirectory](./6-firstdirectory) creates a script that creates a directory named holberton in the /tmp/ directory.
-
-- [File 7-movethatfile](./7-movethatfile) moves the file betty from /tmp/ to /tmp/my_first_directory.
-
-- [File 8-firstdelete](./8-firstdelete) deletes he file betty.
-
-- [File 9-firstdirdeletion](./9-firstdirdeletion) deletes the directory my_first_directory that is in the /tmp directory.
-
-- [File 10-back](./10-back) writes a script that changes the working directory to the previous one.
-
-- [File 11-lists](./11-lists) writes a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
-
-- [File 12-file_type](./12-file_type) writes a script that prints the type of the file named iamafile. 
-
-- [File 13-symbolic_link](./13-symbolic_link) creates a symbolic link to /bin/ls, named __ls__. 
-
-- [File 14-copy_html](./14-copy_html) creates a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
-
-- [File 15-lets_move](./100-lets_move) creates a script that moves all files beginning with an uppercase letter to the directory /tmp/u.
-
-- [File 16-clean_emacs](./101-clean_emacs) creates a script that deletes all files in the current working directory that end with the character ~.
-
-- [File 17-tree](./102-tree) creates a script that creates the directories welcome/, welcome/to/ and welcome/to/holberton in the current directory.
-
-- [File 18-commas](./103-commas) writes a command that lists all the files and directories of the current directory, separated by commas (,).
+- [x] [0-current_working_directory](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/0-current_working_directory): Bash script that prints the absolute pathname of the current working directory.
+- [x] [1-listit](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/1-listit): Bash script that displays the contents list of current directory.
+- [x] [2-bring_me_home](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/2-bring_me_home): Bash script that changes the working directory to the user's home directory.
+- [x] [3-listfiles](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/3-listfiles): Bash script that displays current directory contents in long format.
+- [x] [4-listmorefiles](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/4-listmorefiles): Bash script that displays current directory contents, including hidden files, using long format.
+- [x] [5-listfilesdigitonly](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/5-listfilesdigitonly): Bash script that displays current directory contents, including hidden files, as follows:
+	- Long format.
+	- User and group ID's displayed numerically.
+- [x] [6-firstdirectory](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/6-firstdirectory): Bash script that creates a directory named holberton in the /tmp/ directory.
+- [x] [7-movethatfile](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/7-movethatfile): Bash script that moves the file `betty` from `/tmp/` to `/tmp/my_first_directory`.
+- [x] [8-firstdelete](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/8-firstdelete): Bash script that deletes the file `betty` in `/tmp/my_first_directory`.
+- [x] [9-firstdirdeletion](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/9-firstdirdeletion): Bash script that deletes the directory `my_first_directory` in the `/tmp` directory.
+- [x] [10-back](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/10-back): Bash script that changes the working directory to the previous one.
+- [x] [11-lists](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/11-lists): Bash script that lists all files, including hidden files, in the current directory, parent of the working directory, and `/boot` directory, using long format.
+- [x] [12-file_type](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/12-file_type): Bash script that prints the type of the file named `iamafile` located in the `/tmp` directory.
+- [x] [13-symbolic_link](13-symbolic_link): Bash script that creates a symbolic link to `/bin/ls`, named `__ls__`.
+- [x] [14-copy_html](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/14-copy_html): Bash script that copies all HTML files from the current working directory to the parent of the working directory, but only those that did not exist in the parent directory or were newer than the versions in the parent working directory.
+- [x] [100-lets_move](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/100-lets_move): Bash script that moves all files beginning with an uppercase letter to the directory `/tmp/u`.
+- [x] [101-clean_emacs](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/101-clean_emacs): Bash script that deletes all files in the current working directory that end with the character `~`.
+- [x] [102-tree](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/102-tree): Bash script that creates the directories `welcome/`, `welcome/to/` and `welcome/to/school` in the current directory.
+- [x] [103-commas](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/103-commas): Bash script that lists all files and directories of the current directory, including hidden ones, as follows:
+	- Separated by commas (`,`).
+	- Directory names end with a slash (`/`).
+	- Alpha-ordered, except for the directories `.` and `..` which are listed at the beginning.
+	- Only digits and letters are used to sort - digits come first.
+- [x] [school.mgc](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/school): A magic file that can be used with the command `file` to detect `School` data files.
